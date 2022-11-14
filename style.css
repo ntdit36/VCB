@@ -1,0 +1,123 @@
+.home_page {
+    background-color: #161d31;
+    color: white;
+    font-family: inherit;
+    padding: 0px 0px 50px 0px;
+}
+
+.home_page .navbar {
+    background-color: #283046;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.home_page .main .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* Form */
+
+.form_component {
+    padding: 10px 15px;
+    background-color: #283046;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.form_component .form form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form_component .form input {
+    outline: none;
+    border: 1px solid #404656;
+    background-color: #283046;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: #b4b7bd;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_component .form .item_form {
+    padding: 10px;
+}
+
+.form_component .form .item_form p {
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+.form_component .form .item_form select {
+    width: 100%;
+    outline: none;
+    border: 1px solid #404656;
+    background-color: #283046;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: #b4b7bd;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_component .form .item_form textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #404656;
+    background-color: #283046;
+    border-radius: 5px;
+    padding: 4px 10px;
+    color: #b4b7bd;
+    width: 100%;
+    font-size: 15px;
+}
+
+.form_component .form .item_form button {
+    padding: 3px 15px;
+    outline: none;
+    border: 1px solid #404656;
+    background-color: #283046;
+    box-shadow: 0px 0px 5px #b4b7bd;
+    border-radius: 5px;
+    color: #b4b7bd;
+    font-size: 15px;
+}
+
+.form_component .form .item_form input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+/* Date */
+
+
+/* End date */
+
+@media (max-width: 768px) {
+    .form_component {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .form_component .form .item_form button {
+        margin: auto;
+        display: block;
+    }
+}
+
+
+/* Preview */
+
+.preview_component img {
+    border-radius: 5px;
+}

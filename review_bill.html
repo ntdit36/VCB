@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem lại</title>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/c29ec90d7d.js" crossorigin="anonymous"></script>
+    <!-- CSS boostrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- SwiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./review.css">
+</head>
+
+<body>
+    <div class="home_page">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar_component">
+                    <h4>Tạo bill chuyển khoản Vietcombank</h4>
+                    <p>Xem lại bill trước khi tải về !!</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="prview_bill">
+                <div class="navbar_review">
+                    <div class="time">
+                        <p class="time"></p>
+                    </div>
+                    <div>
+                        <p>
+                            <img class="sim" src="./publics/icon/4g.png" width="100%" alt="">
+                            <img class="wifi" src="./publics/icon/wifi.png" width="100%" alt="">
+                            <img class="pin" src="./publics/icon/pin.png" width="100%" alt="">
+                        </p>
+                    </div>
+                </div>
+                <div class="home">
+                    <img src="./publics/icon/home.png" width="100%" alt="">
+                </div>
+                <div class="main_preview">
+                    <b>VCB Digibank</b>
+                    <div class="icon_tick">
+                        <img src="./publics/icon/tick.png" width="100%" alt="">
+                    </div>
+                    <p class="erorr">CHUYỂN KHOẢN THÀNH CÔNG</p>
+                    <p class="money"></p>
+                    <p class="date_time_day"></p>
+                </div>
+                <div class="table">
+                    <div class="item">
+                        <p id="bank">Tên người thụ hưởng</p>
+                        <p id="user" class="to_name"></p>
+                    </div>
+
+                    <div class="item">
+                        <p id="bank">Tài khoản thụ hưởng</p>
+                        <p id="user" class="to_bank_number"></p>
+                    </div>
+
+                    <div class="item">
+                        <p id="bank">Ngân hàng thụ hưởng</p>
+                        <p id="user">(TECKCOMBANK) Kỹ Thương Việt Nam</p>
+                    </div>
+
+                    <div class="item">
+                        <p id="bank">Mã giao dịch</p>
+                        <p id="user" class="code_bill"></p>
+                    </div>
+
+                    <div class="item">
+                        <p id="bank">Nội dung</p>
+                        <p id="user" class="desc_bill"></p>
+                    </div>
+
+                    <div style="border-bottom: 1px solid #48545f;" class="item">
+                        <p id="bank">Lưu mẫu chuyển tiền</p>
+                        <p><img src="./publics/icon/button.png" width="100%" alt=""></p>
+                    </div>
+                </div>
+
+                <!-- <div class="list_icon">
+                    <div class="item_list_icon">
+                        <img src="./publics/icon/share.png" width="100%" alt="">
+                        <p>Chia sẻ</p>
+                    </div>
+                    <div class="item_list_icon">
+                        <img src="./publics/icon/share.png" width="100%" alt="">
+                        <p>Lưu ảnh</p>
+                    </div>
+                    <div class="item_list_icon">
+                        <img src="./publics/icon/share.png" width="100%" alt="">
+                        <p>Lưu người thụ hưởng</p>
+                    </div>
+                </div> -->
+
+                <div class="button">
+                    <button>Thực hiện giao dịch mới</button>
+                </div>
+
+                <div class="home_coltrol"></div>
+            </div>
+        </div>
+
+        <button class="btn_submit">Tải về</button>
+    </div>
+
+    <!-- Js -->
+    <script src="./index.js"></script>
+
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</body>
+
+</html>

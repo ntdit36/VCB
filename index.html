@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ</title>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/c29ec90d7d.js" crossorigin="anonymous"></script>
+    <!-- CSS boostrap only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- SwiperJs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="home_page">
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar_component">
+                    <h4>Tạo bill chuyển khoản Vietcombank</h4>
+                    <p>Vui lòng điền đầy đủ thông tin vào biểu mẫu để tạo bill !</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="form col-md-8 col-12">
+                    <div class="form_component">
+                        <h5>Thông tin</h5>
+                        <div class="form">
+                            <form (ngSubmit)="onHandleAdd()">
+                                <div class="item_form col-12">
+                                    <p>Số tiền</p>
+                                    <input type="number" min="0" placeholder="Nhập số tiền" class="money">
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Giờ</p>
+                                    <input type="time" id="appt" name="appt" value="" class="time">
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Ngày</p>
+                                    <input type="date" id="start" name="trip-start" value="2018-07-22" class="date">
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Tên người nhận</p>
+                                    <input type="text" placeholder="Nhập tên người nhận" class="to_name">
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Số tài khoản người nhận</p>
+                                    <input type="text" placeholder="Nhập số tài khoản người nhận" class="to_bank_number">
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Ngân hàng thụ hưởng</p>
+                                    <select class="to_bank">
+                                        <option value="" selected>Chọn ngân hàng</option>
+                                        <option value="" >MB Bank</option>
+                                        <option value="" >Vietcombank</option>
+                                        <option value="" >Agribank</option>
+                                        <option value="" >Viettinbank</option>
+                                        <option value="" >Bidv</option>
+                                    </select>
+                                </div>
+                                <div class="item_form col-md-6 col-12">
+                                    <p>Mã giao dịch</p>
+                                    <input type="text" placeholder="10 số" class="code_bill">
+                                </div>
+                                <div class="item_form col-12">
+                                    <p>Nội dung giao dịch</p>
+                                    <textarea rows="5" class="desc_bill"></textarea>
+                                </div>
+                                <div class="item_form col-12">
+                                    <!-- <button class="btn_submit">Tạo bill</button> -->
+                                    <button class="save_local">Tạo bill</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview col-md-4 col-12">
+                    <div class="preview_component">
+                        <img src="https://res.cloudinary.com/ductham087/image/upload/v1667901251/BILL_VIETCOMBANK_CHO_ADROID_mkszil.jpg" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Js -->
+    <script src="./save_local.js"></script>
+</body>
+
+</html>
